@@ -1,0 +1,26 @@
+<!--miniprogram/pages/teskDetail/teskDetail.wxml-->
+<view class="container">
+  <view class="page">
+    <view class="section">
+      <image style="width:60px;height:60px;border-radius:10em;margin:0px 10px" src="{{userImage}}"></image>
+      <view>
+        <view>{{userName}}</view>
+        <view>{{date}}</view>
+      </view>
+      <view>
+        <view>{{type}}</view>
+        <view>{{price}}</view>
+      </view>
+    </view>
+    <view class="section">
+      <view style="display:flex"><view class="blueDot"></view><view>取货地址</view></view>
+      <view style="margin:0px 0px 20px 30px">{{getGoodAddress}}</view>
+      <view style="display:flex"><view class="redDot"></view><view>收货地址</view></view>
+      <view style="margin:0px 0px 20px 30px">{{toAddress}}</view>
+      <view style="display:flex"><view class="resDot"></view><view>送达时间</view></view>
+      <view style="margin:0px 0px 20px 30px">{{time}}</view>
+    </view>
+    <view class="section" style="word-break:break-all;">备注信息：{{info}}</view>
+    <button type="primary" class="button" bindtap="getTesk">接单</button>
+  </view>
+</view>

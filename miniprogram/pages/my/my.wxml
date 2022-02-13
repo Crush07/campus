@@ -1,0 +1,53 @@
+<view class="container">
+  <view class="userInfo">
+    <view>
+      <view wx:if="{{img=='请上传图片'}}" class="img">
+        <image style="width:60px;height:60px;border-radius:10em;margin:0px 10px" src="image/touxiang.jpg"></image>
+      </view>
+      <view wx:if="{{img!='请上传图片'}}" class="img">{{img}}</view>
+    </view>
+    <view style="height:45px;display:flex;flex-direction:column;justify-content:space-between">
+      <view wx:if="{{name=='请输入姓名'}}" class="name">请输入姓名</view>
+      <view wx:if="{{name!='请输入姓名'}}" class="name">{{name}}</view>
+      <view wx:if="{{phone=='请输入手机号'}}" class="phone">请输入手机号</view>
+      <view wx:if="{{phone!='请输入手机号'}}" class="phone">{{phone}}</view>
+    </view>
+  </view>
+  <view class="orderInfo">
+    <view class="orderInfoTitle">
+      <view style="color:#222;font-size:12px">我的订单</view>
+      <view style="color:#999;font-size:12px">查看全部</view>
+    </view>
+    <view class="orderInfoButtonBar">
+      <view class="orderInfoButton">
+        <van-icon name="balance-list-o" size="30px" color="#666"/>
+        <view style="color:#666;font-size:14px">代付款</view>
+      </view>
+      <view class="orderInfoButton">
+        <van-icon name="todo-list-o" size="30px" color="#666"/>
+        <view style="color:#666;font-size:14px">待接单</view>
+      </view>
+      <view class="orderInfoButton">
+        <van-icon name="revoke" size="30px" color="#666"/>
+        <view style="color:#666;font-size:14px">已取消</view>
+      </view>
+      <view class="orderInfoButton">
+        <van-icon name="passed" size="30px" color="#666"/>
+        <view style="color:#666;font-size:14px">已完成</view>
+      </view>
+    </view>
+  </view>
+  <view class="systemModleBar"> 
+    <view class="systemModle">
+      <image style="width:70px;height:70px" src="image/guanyuwomen.png" bindtap="introduce"></image>
+      <image style="width:70px;height:70px" src="image/xiaoneikefu.png" bindtap="innerCustomer"></image>
+      <image style="width:70px;height:70px" src="image/pingtaikefu.png" bindtap="officialCustomer"></image>
+      <image style="width:70px;height:70px" src="image/hezuojiameng.png" bindtap="cooperate"></image>
+    </view>
+    <view class="systemModle">
+      <image style="width:70px;height:70px" src="image/yonhuxieyi.png" bindtap="agreement"></image>
+      <image style="width:70px;height:70px" src="image/bangzhuzhongxing.png" bindtap="help"></image>
+      <image style="width:70px;height:70px" src="image/yijianfankui.png" bindtap="feedback"></image>
+    </view>
+  </view>
+</view>

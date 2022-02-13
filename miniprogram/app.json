@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tesk/tesk",
+    "pages/my/my",
+    "pages/apply/apply",
+    "pages/express/express",
+    "pages/errands/errands",
+    "pages/selfHelp/selfHelp",
+    "pages/myOrders/myOrders",
+    "pages/myAddress/myAddress",
+    "pages/addAddress/addAddress",
+    "pages/teskDetail/teskDetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#d81e06",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/home_select.png",
+        "iconPath": "images/home.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/tesk_select.png",
+        "iconPath": "images/tesk.png",
+        "pagePath": "pages/tesk/tesk",
+        "text": "任务中心"
+      },
+      {
+        "selectedIconPath": "images/my_select.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

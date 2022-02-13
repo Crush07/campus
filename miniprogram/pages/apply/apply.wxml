@@ -1,0 +1,42 @@
+<!--miniprogram/pages/apply/apply.wxml-->
+<view>
+  <van-cell-group>
+   
+    <van-field
+      value="{{ studentName }}"
+      label="姓名"
+      placeholder="请输入姓名"
+      bind:change="onChange"
+      error
+    />
+
+    <van-field
+      value="{{ studentId }}"
+      label="身份证号"
+      placeholder="请输入身份证号"
+      bind:change="onChange"
+      error
+    />
+
+    <view style="color:var(--field-label-color,#646566);font-size: var(--cell-font-size,14px);margin:10px 16px;">学生证正面</view>
+    <van-uploader>
+      <van-button icon="photo" type="primary" style="margin:0px 16px;">上传学生证</van-button>
+    </van-uploader>
+    <view style="height:10px"></view>
+    <view style="color:var(--field-label-color,#646566);font-size: var(--cell-font-size,14px);margin:10px 16px;">提现收款码</view>
+    <van-uploader>
+      <van-button icon="photo" type="primary" style="margin:0px 16px;">上传收款码</van-button>
+    </van-uploader>
+
+  </van-cell-group>
+
+  <view style="padding:10px 16px;">
+    <van-radio-group value="{{ radio }}" bind:change="onChange" style="">
+      <van-radio name="1">同意并阅读<span style="color:red">《接单员协议》</span></van-radio>
+    </van-radio-group>
+  </view>
+
+  <view style="display:flex;justify-content: center;">
+    <van-button round type="info">申请接单员</van-button>
+  </view>
+</view>

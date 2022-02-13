@@ -1,0 +1,68 @@
+/* miniprogram/pages/express/express.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section{
+  width: 80%;
+  height: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  background: #ffffff;
+}
+.good{
+  width: 90%;
+  height: 60px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.goodview{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.goodInfo{
+  width: 120px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.goodNum{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  padding: 0px 10px;
+}
+.remark{
+  width: 90%;
+  border-radius: 5px;
+  margin: 5px 0px;
+  background: #ffffff;
+}
+.inputRemark{
+  height:80px;
+  width: auto;
+  margin:0px 10px 10px 10px;
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 3px;
+}
+.button{
+  width: 80%;
+  border-radius: 2em;
+  margin-top: 20px;
+}

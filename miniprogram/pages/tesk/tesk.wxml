@@ -1,0 +1,36 @@
+<!--miniprogram/pages/tesk/tesk.wxml-->
+<view class="container">
+  <van-tabs active="{{ active }}" class="page" bind:change="onChange" animated>
+    <van-tab title="校园跑腿">
+      <view class="sectionBar">
+        <view class="section" wx:for="{{errandsTesks}}" wx:key="key" bindtap="choose" data-id="{{item.id}}">
+          <view class="sectionTop">
+            <view style="font-size:16px">{{item.userName}}</view>
+            <view wx:if="{{item.state==1}}" style="color:red">已完成</view>
+            <view wx:if="{{item.state!=1}}" style="color:red">￥{{item.price}}</view>
+          </view>
+          <view class="sectionContainer"><view class="greenDot"></view>{{item.time}}</view>
+          <view class="sectionContainer"><view class="blueDot"></view>{{item.getGoodAddress}}</view>
+          <view class="sectionContainer"><view class="redDot"></view>{{item.toAddress}}</view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="快递代取">
+      <view class="sectionBar">
+        <view class="section" wx:for="{{expressTesks}}" wx:key="key" bindtap="choose" data-id="{{item.id}}">
+          <view class="sectionTop">
+            <view style="font-size:16px">{{item.userName}}</view>
+            <view wx:if="{{item.state==1}}" style="color:red">已完成</view>
+            <view wx:if="{{item.state!=1}}" style="color:red">￥{{item.price}}</view>
+          </view>
+          <view class="sectionContainer"><view class="greenDot"></view>{{item.time}}</view>
+          <view class="sectionContainer"><view class="blueDot"></view>{{item.getGoodAddress}}</view>
+          <view class="sectionContainer"><view class="redDot"></view>{{item.toAddress}}</view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="自助服务">
+      自助服务
+    </van-tab>
+  </van-tabs>
+</view>

@@ -1,0 +1,15 @@
+<!--miniprogram/pages/myAddress/myAddress.wxml-->
+<view class="container">
+  <view class="page">
+    <view wx:for="{{addressCard}}" class="addressCard" wx:key="key" bindtap="choose" data-name="{{item.userName}}" data-phone="{{item.userPhone}}" data-address="{{item.address}}">
+      <view class="cardInfo" style="color:#222">{{item.userName}}{{' '}}{{' '}}{{item.userPhone}}</view>
+      <view class="cardInfo" style="border-bottom: 1px solid rgb(246, 246, 246);color:#666">{{item.address}}</view>
+      <view class="cardInfo">
+        <van-checkbox value="{{ item.checked }}" bind:change="onChange" style="width:60%;color:#666">默认地址</van-checkbox>
+        <van-icon name="edit" size="16px" color="#222"/><view style="color:#222">编辑</view>
+        <van-icon name="delete-o" size="16px" color="red"/><view style="color:red">删除</view>
+      </view>
+    </view>
+    <van-button round type="primary" style="margin:30px 0px" bindtap="add">添加地址</van-button>
+  </view>
+</view>

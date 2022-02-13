@@ -1,0 +1,40 @@
+<!--miniprogram/pages/express/express.wxml-->
+<view class="container">
+  <view class="section">
+    <picker bindchange="getGoodAddress" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        取货地点：{{array[index]}}
+      </view>
+    </picker>
+  </view>
+  <view class="section" bindtap="selectAddress" data-type="errands">
+    <view style="font-size:10px">{{userName}}-{{userPhone}}</view>
+    <view style="color:#888;font-size:10px">{{address}}</view>
+  </view>
+  <view class="section">
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+      <view class="picker">
+        今天: {{time}}
+      </view>
+    </picker>
+  </view>
+
+  <view class="remark">
+    <view style="margin:10px">帮助内容（必填）</view>
+    <textarea class="inputRemark" bindblur="helpInfo" placeholder="请复制粘贴取件短信，仅接单员可见" maxlength="50" model:value="{{help}}"/>
+  </view>
+
+  <view class="inputSection">
+    <view style="margin-right:10px">跑腿费</view>
+    <input class="weui-input" maxlength="10" placeholder="请输入跑腿费(至少2元)" model:value="{{price}}"/>
+  </view>
+
+  <view class="remark">
+    <view style="margin:10px">备注信息</view>
+    <textarea class="inputRemark" bindblur="inputRemark" placeholder="请输入备注信息" maxlength="50" model:value="{{remark}}"/>
+  </view>
+
+  <button type="primary" class="button" bindtap="submitOrder">确定</button>
+
+  <view style="height:50px"></view>
+</view>

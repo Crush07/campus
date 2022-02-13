@@ -1,0 +1,59 @@
+/* miniprogram/pages/my/my.wxss */
+.userInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  background: rgb(255, 203, 182);
+  border-radius: 6px 6px 0px 0px;
+  height: 100px;
+  width: 90%;
+}
+.name{
+  color: #222;
+  font-size: 14px;
+  margin: 0px 5px;
+}
+.phone{
+  color: #666;
+  font-size: 10px;
+  margin: 0px 5px;
+}
+.orderInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 0px 0px 6px 6px;
+  height: 120px;
+  width: 90%;
+}
+.orderInfoTitle,.orderInfoButtonBar{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.orderInfoButton{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.systemModleBar{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 6px;
+  width: 90%;
+}
+.systemModle{
+  height: 100px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

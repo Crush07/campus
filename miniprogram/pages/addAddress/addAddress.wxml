@@ -1,0 +1,36 @@
+<!--miniprogram/pages/addAddress/addAddress.wxml-->
+<view class="container">
+  <view class="page">
+    <van-cell-group>  
+      <van-field
+        model:value="{{ name }}"
+        required
+        clearable
+        label="收件姓名"
+        placeholder="请输入收件姓名"
+      />
+      <van-field
+        model:value="{{ phone }}"
+        required
+        clearable
+        label="收件电话"
+        placeholder="请输入收件电话"
+      />
+      <van-field
+        model:value="{{ address }}"
+        required
+        clearable
+        label="收货地址"
+        placeholder="请输入收货地址"
+      />
+      <van-field
+        model:value="{{ detailedAddress }}"
+        required
+        clearable
+        label="详细地址"
+        placeholder="请输入详细地址"
+      />
+    </van-cell-group>
+    <button type="primary" class="button" bindtap="add">确定</button>
+  </view>
+</view>
